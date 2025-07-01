@@ -118,4 +118,24 @@
 // a.name = 'PHP';
 // console.log(a.name);  //PHP
 
+// 2.template literals
 
+const courseName = 'java';
+const courseName2 = 'PHP';
+// const description = 'cource name: ' + courseName;
+// const description = `cource name: ${courseName} ${courseName2}`;
+// const description = `template string noi suy voi \${}`;
+
+// console.log(description);
+
+// 3. multi line string
+// const lines = 'line 1\n' 
+//     + 'line 2\n'
+//     + 'line 3\n'
+//     + 'line 4\n'  //tabnine: extention
+
+const lines = `line 1
+line 2
+line 33`
+
+console.log(lines);
