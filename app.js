@@ -59,9 +59,36 @@
 // logger('Test message...', TYPE_WARN);
 
 
+// import logger from "./logger.js";
+// import * as constants from './constants.js';
 
-import logger from "./logger.js";
-import * as constsnts from './constants.js';
+// console.log(constants);
 
-console.log(constsnts);
+
+// 6.  Enhanced object literals 
+// (định nghĩa key:value cho object)
+// (định nghĩa method cho object)
+// (định nghĩa key cho object dưới dạng biến)
+
+// var Courcename = 'data base';
+// var price = 100;
+
+// var course = {
+//     Courcename,
+//     price,
+//     getName() {
+//         return Courcename;
+//     }
+// };
+// console.log(course.getName());
+
+
+var fieldName = 'name';
+var fieldPrice = 'price';
+
+const cource = {
+    [fieldName]: 'java',
+    [fieldPrice]: 100
+};
+console.log(cource);
 
