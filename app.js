@@ -102,11 +102,20 @@
 // }
 // console.log(course);
 
+// code thuần: Var
+// Babel: Const, Let
+// KHi định nghĩa biến và không gán lại biến đó: Const
+// Khi cần gán lại giá trị cho biến: Let
 
-const a = {
-    name: 'java'  //name là thuộc tính(object) nên có thể gán lại
-};
-a.name = 'PHP';
-console.log(a.name);  //PHP
+// let isSuccess = false;
+// if(){
+//     isSuccess = true;
+// }
+
+// const a = {
+//     name: 'java'  //name là thuộc tính(object) nên có thể gán lại
+// };
+// a.name = 'PHP';
+// console.log(a.name);  //PHP
 
 
