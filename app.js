@@ -82,13 +82,31 @@
 // };
 // console.log(course.getName());
 
+// var fieldName = 'name';
+// var fieldPrice = 'price';
 
-var fieldName = 'name';
-var fieldPrice = 'price';
+// const cource = {
+//     [fieldName]: 'java',
+//     [fieldPrice]: 100
+// };
+// console.log(cource);
 
-const cource = {
-    [fieldName]: 'java',
-    [fieldPrice]: 100
+
+// 1. Let, const
+// phân biệt Var vs Let, Const: scope: phạm vi truy cập, hóting
+// const VS var, let: Assignment
+
+// Code block: if else, loop, {}, ...
+// {
+//     var course = 'java';
+// }
+// console.log(course);
+
+
+const a = {
+    name: 'java'  //name là thuộc tính(object) nên có thể gán lại
 };
-console.log(cource);
+a.name = 'PHP';
+console.log(a.name);  //PHP
+
 
