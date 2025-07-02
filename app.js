@@ -178,13 +178,117 @@
 
 
 
-// 8. Destructuring
+// 8. Destructuring (phân rã)
+// var array = ['java', 'php', 'ruby'];
+// var a = array[0];
+// var b = array[1];
+// var c = array[2];
+// var [a, b, c] = array;   //destructuring
+
+// console.log(a, c, c);
+
+
+// 9. rest parameters (lay phan con lai)- rest dùng với destructuring
+    // array
+// var array = ['java', 'php', 'ruby'];
+// var [a, b, ...rest] = array;
+
+// console.log(a);
+// console.log(rest);
+
+    // object
+// var cource = {
+//     name: 'jave',
+//     price: 100,
+//     img: 'img-add',
+//     description: 'much'
+// };
+// var {name, price, img} = cource;
+// var {name, description = 'default'} = cource;
+// console.log(name);
+// console.log(description);
+
+// function logger(a, b, ...param){
+//     console.log(param);
+// }
+// logger(1, 2, 3, 8);
+
+
+// function logger({ten, price, ...rest}){
+//     console.log(ten);
+//     console.log(price);
+//     console.log(rest);
+// }
+// logger({             //oblect
+//     ten: 'jave',
+//     price: 100,
+//     description: 'course for beginers'
+// });
+
+
+// function logger([a, b, ...rest]) {
+//     console.log(a),
+//     console.log(b);
+//     console.log(rest);
+// }
+// logger([2, 6, 123, 23]);          //array
+
+
+// 10. Spread (...) - giải, nối mảng
+// var array1 = ['java', 'php', 'ruby'];
+// var array2 = ['react', 'py'];
+// var array3 = [...array2, ...array1];
+// console.log(array3);
+
+
+// var obj1 = {
+//     ten: 'java'
+// };
+
+// var obj2 = {
+//     price: 100
+// };
+
+// var obj3 = {
+//     ...obj1, 
+//     ...obj2
+// };
+// console.log(obj3)
+
+
+// var defaultConfig = {
+//     api: 'htpts://domain-trang-khoa-hoc',
+//     apiVersion: 'v1',
+//     other: 'other',
+// };
+
+// var exerciseConfig = {
+//     ...defaultConfig,
+//     api: 'https://domain-trang-bai-tap'
+// };
+// console.log(exerciseConfig);
+
+
+    // truyền tham số cho hàm
+// var array = ['java', 'php', 'ruby'];
+// function logger(a, b, c) {
+//     console.log(a, b, c);
+// }
+// logger(...array);
+
+// var array = ['java', 'php', 'ruby'];
+// function logger(...rest) { //... định nghĩa tham số, kết hợp với destructuring: phân rã
+//     for (var i = 0; i < rest.length; i++) {
+//         console.log(rest[i]);
+//     }
+// }
+// logger(...array); // gọi hàm truyền đối số thì ... là spread
 
 
 
-// 9. rest parameters
-// 10. Spread
 // 11. tagged template literal
+
+
 
 
 // 12. modules (split): import/export
