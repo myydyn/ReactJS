@@ -286,8 +286,37 @@
 
 
 
-// 11. tagged template literal
+// 11. Tagged template literal
+// function highlight(...rest) {
+//     console.log(rest);
+// }
+// var brand = 'f8';
+// var course = 'java';
+// highlight`hoc lap trinh ${course} tai ${brand}!!!`;
 
+
+// function highlight([first, ...conLai], ...info) {
+//     console.log('phanDau: ', first);
+//     console.log('string: ', conLai);
+//     console.log('value: ', info);
+// }
+// var brand = 'f8';
+// var course = 'java';
+// const html = highlight`hoc lap trinh ${course} tai ${brand}!!!`;
+// console.log(html);
+
+
+function highlight([first, ...conLai], ...info) {
+    return info.reduce(
+        (acc, curr) => [...acc, `<span>${curr}</span>`, conLai.shift()],
+        [first]
+    )
+    .join('')
+}
+var brand = 'f8';
+var course = 'java';
+const html = highlight`hoc lap trinh ${course} tai ${brand}!!!`;
+console.log(html);
 
 
 
